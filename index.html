@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 4px;
+			padding: 4px;
+		}
+		.container{
+			width: 1455px;
+			height: 650px;																
+			border: 3px solid black;
+		}
+		.bosh{
+			width: 1434px;
+			height: 630px;
+			border: 3px solid red;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.inside_one{
+			width: 1000px;
+			height: 610px;
+			border: 3px solid red;
+		}
+		.inside_two{
+			width: 392px;
+			height: 610px;
+			border: 3px solid red;
+		}
+		.greenone{
+			width: 980px;
+			height: 190px;
+			border: 3px solid green;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.greentwo{
+			width: 980px;
+			height: 190px;
+			border: 3px solid green;
+		}
+		.greenthree{
+			width: 980px;
+			height: 176px;
+			border: 3px solid green;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.inside_two_greenone{
+			width: 370px;
+			height: 190px;
+			border: 3px solid green;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.inside_two_greentwo{
+			width: 370px;
+			height: 190px;
+			border: 3px solid green;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.inside_two_greenthree{
+			width: 370px;
+			height: 176px;
+			border: 3px solid green;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.greenone_one{
+			width: 650px;
+			height: 170px;
+			border: 3px solid green;
+		}
+		.greenone_two{
+			width: 288px;
+			height: 170px;
+			border: 3px solid green;
+		}
+		.greenone_one_blue_one{
+			width: 630px;
+			height: 150px;
+			border: 3px solid blue;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.blue_one_one{
+			width: 290px;
+			height: 130px;
+			border: 3px solid blue;
+		}
+		.blue_one_two{
+			width: 298px;
+			height: 130px;
+			border: 3px solid blue;
+		}
+		.gray_one{
+			width: 270px;
+			height: 110px;
+			border: 3px solid gray;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.gray_two{
+			width: 276px;
+			height: 110px;
+			border: 3px solid gray;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.gray_one_one{
+			width: 110px;
+			height: 90px;
+			border: 3px solid gray;
+		}
+		.gray_one_two{
+			width: 117px;
+			height: 90px;
+			border: 3px solid gray;
+		}
+		.gray_two_one{
+			width: 68px;
+			height: 90px;
+			border: 3px solid gray;
+		}
+		.gray_two_two{
+			width: 70px;
+			height: 90px;
+			border: 3px solid gray;
+		}
+		.gray_two_three{
+			width: 75px;
+			height: 90px;
+			border: 3px solid gray;
+		}
+		.greentwo_one{
+			width: 960px;
+			height: 170px;
+			border: 3px solid green;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.greentwo_one_greenone{
+			width: 300px;
+			height: 150px;
+			border: 3px solid green;
+		}
+		.greentwo_one_greentwo{
+			width: 618px;
+			height: 150px;
+			border: 3px solid green;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.greentwo_blue_one{
+			width: 190px;
+			height: 130px;
+			border: 3px solid blue;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.greentwo_blue_two{
+			width: 190px;
+			height: 130px;
+			border: 3px solid blue;
+		}
+		.greentwo_blue_three{
+			width: 175px;
+			height: 130px;
+			border: 3px solid blue;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.greentwo_blue_one_blueone{
+			width: 70px;
+			height: 110px;
+			border: 3px solid blue;
+		}
+		.greentwo_blue_one_bluetwo{
+			width: 76px;
+			height: 110px;
+			border: 3px solid blue;
+		}
+		.greentwo_blue_two_blueone{
+			width: 168px;
+			height: 110px;
+			border: 3px solid blue;
+		}
+		.greentwo_blue_three_blueone{
+			width: 65px;
+			height: 110px;
+			border: 3px solid blue;
+		}
+		.greentwo_blue_yhree_bluetwo{
+			width: 68px;
+			height: 110px;
+			border: 3px solid blue;
+		}
+		.greenthree_greenone_one{
+			width: 300px;
+			height: 155px;
+			border: 3px solid green;
+		}
+		.greenthree_greenone_two{
+			width: 300px;
+			height: 155px;
+			border: 3px solid green;
+		}
+		.greenthree_greenone_three{
+			width: 317px;
+			height: 155px;
+			border: 3px solid green;
+		}
+		.greenthree_greenone_one_blueone{
+			width: 278px;
+			height: 135px;
+			border: 3px solid blue;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.greenthree_greenone_two_blueone{
+			width: 278px;
+			height: 135px;
+			border: 3px solid blue;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.greenthree_greenone_three_blueone{
+			width: 295px;
+			height: 135px;
+			border: 3px solid blue;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.greenthree_greenone_one_blueone_one{
+			width: 70px;
+			height: 115px;
+			border: 3px solid blue;
+		}
+		.greenthree_greenone_one_blueone_two{
+			width: 70px;
+			height: 115px;
+			border: 3px solid blue;
+		}
+		.greenthree_greenone_one_blueone_three{
+			width: 73px;
+			height: 115px;
+			border: 3px solid blue;
+		}
+		.greenthree_greenone_two_blueone_one{
+			width: 115px;
+			height: 115px;
+			border: 3px solid blue;
+		}
+		.greenthree_greenone_two_blueone_two{
+			width: 120px;
+			height: 115px;
+			border: 3px solid blue;
+		}
+		.greenthree_greenone_three_blueone_one{
+			width: 125px;
+			height: 115px;
+			border: 3px solid blue;
+		}
+		.greenthree_greenone_three_blueone_two{
+			width: 126px;
+			height: 115px;
+			border: 3px solid blue;
+		}
+		.inside_two_greenone_one{
+			width: 162px;
+			height: 170px;
+			border: 3px solid green;
+		}
+		.inside_two_greenone_two{
+			width: 165px;
+			height: 170px;
+			border: 3px solid green;
+		}
+		.inside_two_greentwo_one{
+			width: 100px;
+			height: 170px;
+			border: 3px solid green;
+		}
+		.inside_two_greentwo_two{
+			width: 100px;
+			height: 170px;
+			border: 3px solid green;
+		}
+		.inside_two_greentwo_three{
+			width: 105px;
+			height: 170px;
+			border: 3px solid green;
+		}
+		.inside_two_greenthree_one{
+			width: 200px;
+			height: 155px;
+			border: 3px solid green;
+		}
+		.inside_two_greenthree_two{
+			width: 125px;
+			height: 155px;
+			border: 3px solid green;
+		}
+		.inside_two_greenthree_one_blueone{
+			width: 178px;
+			height: 135px;
+			border: 3px solid blue;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.inside_two_greenthree_one_blueone_one{
+			width: 65px;
+			height: 115px;
+			border: 3px solid blue;
+		}
+		.inside_two_greenthree_one_blueone_two{
+			width: 69px;
+			height: 115px;
+			border: 3px solid blue;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="bosh">
+			<div class="inside_one">
+				<div class="greenone">
+					<div class="greenone_one">
+						<div class="greenone_one_blue_one">
+							<div class="blue_one_one">
+								<div class="gray_one">
+									<div class="gray_one_one"></div>
+									<div class="gray_one_two"></div>
+								</div>
+							</div>
+							<div class="blue_one_two">
+								<div class="gray_two">
+									<div class="gray_two_one"></div>
+									<div class="gray_two_two"></div>
+									<div class="gray_two_three"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="greenone_two"></div>
+				</div>
+				<div class="greentwo">
+					<div class="greentwo_one">	
+						<div class="greentwo_one_greenone"></div>
+						<div class="greentwo_one_greentwo">
+							<div class="greentwo_blue_one">
+								<div class="greentwo_blue_one_blueone"></div>
+								<div class="greentwo_blue_one_bluetwo"></div>
+							</div>
+							<div class="greentwo_blue_two">
+								<div class="greentwo_blue_two_blueone"></div>
+							</div>
+							<div class="greentwo_blue_three">
+								<div class="greentwo_blue_three_blueone"></div>
+								<div class="greentwo_blue_yhree_bluetwo"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="greenthree">
+						<div class="greenthree_greenone_one">
+							<div class="greenthree_greenone_one_blueone">
+								<div class="greenthree_greenone_one_blueone_one"></div>
+								<div class="greenthree_greenone_one_blueone_two"></div>
+								<div class="greenthree_greenone_one_blueone_three"></div>
+							</div>
+						</div>
+						<div class="greenthree_greenone_two">
+							<div class="greenthree_greenone_two_blueone">
+								<div class="greenthree_greenone_two_blueone_one"></div>
+								<div class="greenthree_greenone_two_blueone_two"></div>
+							</div>
+						</div>
+						<div class="greenthree_greenone_three">
+							<div class="greenthree_greenone_three_blueone">
+								<div class="greenthree_greenone_three_blueone_one"></div>
+								<div class="greenthree_greenone_three_blueone_two"></div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="inside_two">
+				<div class="inside_two_greenone">
+					<div class="inside_two_greenone_one"></div>
+					<div class="inside_two_greenone_two"></div>
+				</div>
+				<div class="inside_two_greentwo">
+					<div class="inside_two_greentwo_one"></div>
+					<div class="inside_two_greentwo_two"></div>
+					<div class="inside_two_greentwo_three"></div>
+				</div>
+				<div class="inside_two_greenthree">
+					<div class="inside_two_greenthree_one">
+						<div class="inside_two_greenthree_one_blueone">
+							<div class="inside_two_greenthree_one_blueone_one"></div>
+							<div class="inside_two_greenthree_one_blueone_two"></div>
+						</div>
+					</div>
+					<div class="inside_two_greenthree_two"></div>
+				</div>
+			</div>
+	</div>
+</div>
+</body>
+</html>
